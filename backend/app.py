@@ -42,7 +42,9 @@ MONGO_DB_NAME = os.environ.get("MONGO_DB", "newsdb")
 SCRAPE_TTL_SECONDS = int(os.environ.get("SCRAPE_TTL_SECONDS", "900"))
 SENTIMENT_BACKEND = os.environ.get("SENTIMENT_BACKEND", "vader").lower()
 _origins = [o.strip() for o in os.environ.get("ALLOWED_ORIGINS", "*").split(",") if o.strip()]
-ALLOWED_ORIGINS = "*" if _origins == ["*"] or not _origins else _origins
+ALLOWED_ORIGINS = [
+    "https://news-z-qnia.vercel.app"
+]
 
 IST = timezone(timedelta(hours=5, minutes=30))  # "today" means today in India
 
