@@ -1,6 +1,6 @@
 export async function translateText(text, targetLang = "hi") {
   try {
-    const response = await fetch("https://newsz-2.onrender.com/translate", {
+    const response = await fetch("https://newsz-3.onrender.com/translate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text, targetLang }),
