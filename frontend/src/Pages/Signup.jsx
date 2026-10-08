@@ -44,7 +44,7 @@ export function Signup() {
 
     try {
       // Send a POST request to the Flask backend
-      const response = await fetch("https://newsz-2.onrender.com/signup", {
+      const response = await fetch("https://newsz-3.onrender.com/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
