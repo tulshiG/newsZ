@@ -7,7 +7,7 @@ export function useTranslator() {
   async function translateText(text) {
     if (lang === "en") return text; // no translation needed
 
-    const response = await fetch("http://127.0.0.1:5000/translate", {
+    const response = await fetch("https://newsz-2.onrender.com/translate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text, target: lang }),
