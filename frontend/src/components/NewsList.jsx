@@ -4,7 +4,8 @@ export default function NewsList() {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/news")
+    // fetch("http://127.0.0.1:5000/api/news")
+    fetch("https://newsz-2.onrender.com/newspapers")
       .then(res => res.json())
       .then(data => setNews(data))
       .catch(err => console.error(err));
