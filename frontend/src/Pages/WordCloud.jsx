@@ -30,7 +30,7 @@ export default function WordCloud() {
       }, []);
   useEffect(() => {
     // Fetch word cloud image
-    fetch("https://newsz-2.onrender.com/wordcloud")
+    fetch("https://newsz-3.onrender.com/wordcloud")
       .then(res => res.blob())
       .then(blob => {
         const url = URL.createObjectURL(blob);
@@ -39,7 +39,7 @@ export default function WordCloud() {
       .catch(err => console.error("Error fetching word cloud:", err));
 
     // Fetch frequent words
-    fetch("https://newsz-2.onrender.com/frequent-words")
+    fetch("https://newsz-3.onrender.com/frequent-words")
       .then(res => res.json())
       .then(data => setFrequentWords(data))
       .catch(err => console.error("Error fetching frequent words:", err));
