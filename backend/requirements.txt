@@ -3,8 +3,11 @@ flask-cors
 pymongo
 requests
 beautifulsoup4
+lxml
+python-dateutil
 python-dotenv
 gunicorn
 wordcloud
-transformers
+Pillow
+vaderSentiment
 deep_translator
