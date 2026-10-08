@@ -15,7 +15,7 @@ export default function Save() {
       }
 
       try {
-        const res = await fetch("https://newsz-2.onrender.com/saved-headlines", {
+        const res = await fetch("https://newsz-3.onrender.com/saved-headlines", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email: userEmail }),
@@ -47,7 +47,7 @@ export default function Save() {
     }
 
     try {
-      const res = await fetch("https://newsz-2.onrender.com/delete_headline", {
+      const res = await fetch("https://newsz-3.onrender.com/delete_headline", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
