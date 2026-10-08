@@ -1,6 +1,6 @@
 export async function getNews(source = "All") {
   try {
-    const res = await fetch(`https://newsz-2.onrender.com/api/news?source=${encodeURIComponent(source)}`);
+    const res = await fetch(`https://newsz-3.onrender.com/api/news?source=${encodeURIComponent(source)}`);
     
     if (!res.ok) {
       throw new Error("Failed to fetch news");
