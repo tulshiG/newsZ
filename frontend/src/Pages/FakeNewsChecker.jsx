@@ -12,7 +12,7 @@ export default function FakeNewsChecker() {
     setResult(null);
 
     try {
-      const res = await fetch("https://newsz-2.onrender.com/fake-news-detect", {
+      const res = await fetch("https://newsz-3.onrender.com/fake-news-detect", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: inputText }),
