@@ -21,7 +21,8 @@ from scrapers.thehindu import scrape_thehindu_rss
 from newspapers.toi_news import scrape_category, CATEGORY_URLS
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+# CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+CORS(app, origins=["https://news-z-qnia.vercel.app"])
 # CORS(app, resources={r"/*": {"origins": "http://localhost:5174"}})
 
 
