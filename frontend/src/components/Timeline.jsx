@@ -75,7 +75,7 @@ export default function Timeline() {
   const fetchSavedHeadlines = async (userEmail) => {
     if (!userEmail) return;
     try {
-      const res = await fetch("http://127.0.0.1:5000/saved-headlines", {
+      const res = await fetch("https://newsz-3.onrender.com/saved-headlines", {
         method: "POST", // ✅ Change this from GET to POST
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: userEmail }), // ✅ Send email in the request body
@@ -94,7 +94,7 @@ export default function Timeline() {
       setLoading(true);
       setError(null);
       try {
-        const url = `http://127.0.0.1:5000/scrape-timeline?timeframe=${timeframe}&sentiment=${sentiment}&source=${source}`;
+        const url = `https://newsz-3.onrender.com/scrape-timeline?timeframe=${timeframe}&sentiment=${sentiment}&source=${source}`;
         const res = await fetch(url);
         if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
 
