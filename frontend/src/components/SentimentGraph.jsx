@@ -47,7 +47,7 @@ export default function SentimentAnalysis({ timeframe, sentiment, source }) {
       setError(null);
       setStartAnimation(false); // Reset animation state on new fetch
       try {
-        const url = `http://127.0.0.1:5000/sentiment-graph?timeframe=${timeframe}&sentiment=${sentiment}&source=${source}`;
+        const url = `https://newsz-3.onrender.com/sentiment-graph?timeframe=${timeframe}&sentiment=${sentiment}&source=${source}`;
         const res = await fetch(url);
         if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
 
