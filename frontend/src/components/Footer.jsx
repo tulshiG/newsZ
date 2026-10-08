@@ -72,27 +72,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Categories
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Categories</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="/category/politics" className="hover:text-blue-400 transition-colors">Politics</a>
-              </li>
-              <li>
-                <a href="/category/business" className="hover:text-blue-400 transition-colors">Business</a>
-              </li>
-              <li>
-                <a href="/category/technology" className="hover:text-blue-400 transition-colors">Technology</a>
-              </li>
-              <li>
-                <a href="/category/sports" className="hover:text-blue-400 transition-colors">Sports</a>
-              </li>
-              <li>
-                <a href="/category/entertainment" className="hover:text-blue-400 transition-colors">Entertainment</a>
-              </li>
-            </ul>
-          </div> */}
+        
           
           {/* Contact & Legal */}
           <div>
