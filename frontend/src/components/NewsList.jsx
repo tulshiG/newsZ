@@ -4,7 +4,7 @@ export default function NewsList() {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-     fetch("https://newsz-2.onrender.com/news")
+     fetch("https://newsz-3.onrender.com/news")
     
       .then(res => res.json())
       .then(data => setNews(data))
