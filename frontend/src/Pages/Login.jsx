@@ -34,7 +34,7 @@ export function Login() {
     // localStorage.setItem("userEmail", email);
     try {
       // Send a POST request to the Flask backend
-      const response = await fetch("https://newsz-2.onrender.com/login", {
+      const response = await fetch("https://newsz-3.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
