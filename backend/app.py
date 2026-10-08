@@ -45,7 +45,19 @@ try:
 except ServerSelectionTimeoutError:
     mongo_connected = False
     print("⚠️ MongoDB not available. Running in fallback mode.")
-
+@app.route("/")
+def home():
+    return jsonify({
+        "status": "success",
+        "message": "NewsZ Flask API is running",
+        "endpoints": {
+            "news": "/news",
+            "newspapers": "/newspapers",
+            "timeline": "/scrape-timeline",
+            "wordcloud": "/wordcloud",
+            "sentiment": "/sentiment-graph"
+        }
+    })
 @app.route("/signup", methods=["POST"])
 def signup():
     data = request.json
