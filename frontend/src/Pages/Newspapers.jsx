@@ -18,7 +18,7 @@ const Newspaper = () => {
     const [page, setPage] = useState(1);
     const [hasMore, setHasMore] = useState(true);
 
-    const API_BASE_URL = "http://localhost:5000";
+    const API_BASE_URL = "https://newsz-3.onrender.com/";
     const HEADLINES_PER_PAGE = 20;
 
     const allCategories = [
