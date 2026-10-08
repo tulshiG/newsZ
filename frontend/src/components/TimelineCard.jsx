@@ -52,7 +52,7 @@ export default function TimelineCard({ item, savedHeadlines, onSave }) {
       }
 
       try {
-        const res = await fetch("https://newsz-2.onrender.com/translate", {
+        const res = await fetch("https://newsz-3.onrender.com/translate", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ text: text, lang: currentLanguage }),
@@ -84,7 +84,7 @@ export default function TimelineCard({ item, savedHeadlines, onSave }) {
 
     setSaving(true);
     try {
-      const res = await fetch("https://newsz-2.onrender.com/save_headline", {
+      const res = await fetch("https://newsz-3.onrender.com/save_headline", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
