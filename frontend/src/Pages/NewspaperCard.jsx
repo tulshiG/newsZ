@@ -8,7 +8,7 @@ export default function NewsCard({ newspaper }) {
   const fetchHeadlines = async () => {
     setLoading(true);
     try {
-      const res = await fetch("https://newsz-2.onrender.com/news"); // ✅ full backend URL
+      const res = await fetch("https://newsz-3.onrender.com/news"); // ✅ full backend URL
       if (!res.ok) throw new Error("Failed to fetch news");
       const data = await res.json();
       setHeadlines(data.data || []);
