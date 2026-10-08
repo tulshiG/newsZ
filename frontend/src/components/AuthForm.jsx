@@ -17,7 +17,7 @@ export default function AuthForm() {
     e.preventDefault();
     const endpoint = isLogin ? "/login" : "/signup";
 
-    const res = await fetch(`https://newsz-2.onrender.com${endpoint}`, {
+    const res = await fetch(`https://newsz-3.onrender.com/${endpoint}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData)
