@@ -37,7 +37,7 @@ from scrapers.thehindu import scrape_thehindu_rss
 from scrapers.toi import scrape_toi
 
 # ---------------------------------------------------------------- Config
-MONGO_URI = os.environ.get("MONGO_URI", "mongodb://localhost:27017/")
+MONGO_URI = os.getenv("MONGO_URI")
 MONGO_DB_NAME = os.environ.get("MONGO_DB", "newsdb")
 SCRAPE_TTL_SECONDS = int(os.environ.get("SCRAPE_TTL_SECONDS", "900"))
 SENTIMENT_BACKEND = os.environ.get("SENTIMENT_BACKEND", "vader").lower()
